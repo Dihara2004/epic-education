@@ -1,17 +1,17 @@
 // Method 01: Check ./session - 04/index.html file
 // Method 02: Import named exports from the file math.js:
-import { add, subtract, user } from "./math.js"; // Modular import
+//import { add, subtract, user } from "./math.js"; // Modular import
 // Import a default export from the file message.js:
-import message from "./message.js"; // default import
+//import message from "./message.js"; // default import
 
 
-console.log("Session 4 here!");
+//console.log("Session 4 here!");
 
-console.log("Start.");
+//console.log("Start.");
 
-setTimeout(()=> console.log("Time out callback"), 1000);
+//setTimeout(()=> console.log("Time out callback"), 1000);
 
-console.log("End.")
+//console.log("End.")
 
 // JavaScript Promise
 
@@ -68,9 +68,9 @@ async function initializeApp() {
 }
 
 // Call the async initializeApp function
-initializeApp();
+//initializeApp();
 
-console.log("I'm here after the async function!");
+//console.log("I'm here after the async function!");
 
 // Fetch Data with a JavaScript Promise
 // function fetchDataPromise() {
@@ -117,38 +117,38 @@ function handleData(data) {
   console.log("Data received : ", data);
 }
 
-// fetchDataCallback(handleData);
+fetchDataCallback(handleData);
 
 // JavaScript Modules
 
-// console.log("5 + 3 add", add(5, 3));
-// console.log("5 - 3 subtract", subtract(5, 3));
-// console.log("User", user);
-// console.log("Message::", message("John", 30));
+//console.log("5 + 3 add", add(5, 3));
+//console.log("5 - 3 subtract", subtract(5, 3));
+//console.log("User", user);
+//console.log("Message::", message("John", 30));
 
 // Session Storage
 
 const userName = sessionStorage.getItem("name");
 
 if (userName === null) {
-  // console.log("Name is not set in the session storage");
+  //console.log("Name is not set in the session storage");
 } else {
-  // console.log("Name is :", userName);
+  //console.log("Name is :", userName);
 }
 
-// sessionStorage.setItem("name", "John");
+//sessionStorage.setItem("name", "John");
 
 // Local Storage
 
 const userEmail = localStorage.getItem("email");
 
 if (userEmail === null) {
-  // console.log("Email is not set in the local storage");
+  //console.log("Email is not set in the local storage");
 } else {
-  // console.log("Email is :", userEmail);
+  //console.log("Email is :", userEmail);
 }
 
-// localStorage.setItem("email", "john@gmail.com");
+//localStorage.setItem("email", "john@gmail.com");
 
 
 
